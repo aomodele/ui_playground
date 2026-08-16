@@ -1,0 +1,542 @@
+/* 7a. Width 200px + rounded corners */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+.shoot{
+  width: 200px;
+  height: 200px;
+  border-radius: 25px; 
+  object-fit:fill;
+  object-position: center;
+}
+
+/* 7b. Square, image centered/cropped within it */
+.outing {
+  width: 200px;
+ 
+  object-fit: contain;
+  object-position: center;
+}
+
+/* 7c. Circle */
+.thanksgiving {
+  width: 200px;
+  
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.roundsearch{
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight:500;
+  height: 25px;
+  margin-left: 12px;
+  margin-top: 50px;
+  padding-left: 6px;
+  border-radius: 5px;
+  border: 1px solid #999;
+ border-color: rgb(207, 207, 222);
+ outline: none;
+}
+
+.shadowsearch{
+   font-size: 10px;
+  height: 30px;
+  width: 400px;
+  margin-left: 12px;
+  margin-top: 50px;
+  padding-left: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
+  border-radius: 50px;
+  border: none; /*1px solid #999;*/
+ border-color: rgb(106, 106, 107);
+
+}
+.linkedin-box{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 260px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.linkedin-label{
+ display: block;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #484747;
+}
+
+.linkedinsearch {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.linkedin-terms {
+  font-size: 10px;
+  color: #666;
+  margin: 0 0 16px 0;
+}
+
+.linkedin-submit {
+  width: 100%;
+  background-color:#2b63bc;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight:normal;
+  cursor: pointer;
+}
+
+.twitter-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 400px;
+  height: 60px;
+  display: flex;         /* flex handles vertical centering better than vertical-align in most cases */
+  align-items: center;
+  gap: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.twitter-box-shadow{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #f5f9ec;
+  gap: 12px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
+  border: none; /*1px solid #999;*/
+ border-color: rgb(106, 106, 107);
+}
+
+.self-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position:top;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.twitter-placeholder {
+  flex: 1;
+  color: #888;
+  vertical-align: middle;
+  background-color: #f5f9ec;
+border: none;
+}
+.twitter-placeholder::placeholder{
+  font-size: xx-small;
+}
+
+.twitterbutton{
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border:#030202;
+  padding: 8px ;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: x-small;
+  cursor: pointer;
+  vertical-align: middle;
+margin-right: 5px ;
+width: 60px;
+}
+.twitterbutton:hover{
+  background-color: #030202;
+}
+.data-entry{
+  border: 1px solid #c44bd7;
+    background-color: rgb(203, 119, 231);
+  border-radius: 8px;
+  padding: 16px;
+  width: 260px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.name{
+margin-bottom: 5px;
+width: 200px;
+border: 1px solid #030202;
+height: 20px;
+}
+.email1{
+width: 200px;
+border: 1px solid #030202;
+height: 20px;
+}
+.name,.email1::placeholder{font-size: 10px;}
+.paragraph-box{
+   border: 1px solid #ccc;
+     background-color: rgb(241, 136, 7);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  width: 370px;
+}
+.para-text{
+  width:230px;
+}
+.Yesbtn{
+margin-left: 10px;
+height: 20px;}
+.Nobtn{
+ margin-left: 3px;
+  height: 20px;
+}
+.google-box{
+   border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 16px;
+  width: 370px;
+}
+.googleimg{
+  width: 200px;
+  align-content: center;
+}
+.search-google{
+  align-items: center;
+  font-size: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  height: 22px;
+  width: 350px;
+  padding-left: 10px;
+   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
+  border-radius: 50px;
+  border: none; /*1px solid #999;*/
+ border-color: rgb(106, 106, 107);
+}
+.search-google::placeholder{
+  color: #757474;
+}
+
+.form-box{
+  border: 1px solid #ccc;
+    background-color: rgb(213, 231, 231);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 16px;
+  width: 370px;
+  /* border: 1px solid #ccc;
+  border-radius: 8px;
+  
+ flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  padding: 16px;
+  width: 370px;*/
+}
+
+ .name-row{
+  display: flex;
+}
+.firstname{
+  width: 102px;
+  margin-right: 2px;
+}
+.lastname{
+  width: 102px;
+    margin-left: 2px;
+
+}
+.email{
+  width: 217px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.signupbtn{
+  width: 225px;
+  height: 30px;
+  font-family: Roboto;
+  background-color: #2b63bc;
+  color: rgb(255,255,255);
+  font-size: small;
+  border: none;
+  border-radius: 5px;
+}
+.signupbtn:hover{
+  background-color: #6f8ef3ae;
+  color: black;
+}
+.request-box{
+  flex-direction: column;
+    background-color: rgb(86, 215, 172);
+
+  width: 270px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif
+  
+}
+.uber-label{
+  font-size: 25px;
+  margin: 0px;
+  font-weight: 10px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+
+}
+.location{
+  background-color: #9b9a9a33;
+  height: 25px;
+  border: none;
+  margin-bottom: 5px;
+  width: 250px;
+  margin-left: 8px;
+}
+.location::placeholder{
+  font-size: 10px;
+  font-weight:bold;
+  padding-left: 10px;
+}
+.destination{
+  background-color: #9b9a9a33;
+  height: 25px;
+  border: none;
+    width: 250px;
+margin-left: 8px;
+}
+.destination::placeholder{
+  font-size: 10px;
+  font-weight:bold;
+  padding-left: 10px;
+}
+.button-row{
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 10px;
+}
+.requestbtn{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 30px;
+  font-size:xx-small;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.schedule{
+  background-color: #9b9a9a33;
+  color: rgb(0, 0, 0);
+  border: none;
+  height: 30px;
+  font-size:xx-small;
+  width: 110px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.thumbnail{width: 300px;
+      display: block;
+    /*
+    height: 300px;
+    object-fit: contain;
+    object-position: top;
+    border-width: 2px;
+    border-style: solid;
+    border-color: brown;
+    */
+}
+.Y-title{
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+}
+.duck{
+  width: 5px;
+  height: 5px;
+}
+.youtube-container{
+  background-color: black;
+  width: 300px;
+}
+.search-bar{
+  font-size: 10px;
+  height: 30px;
+  margin-left: 12px;
+  padding-left: 6px;
+  border-radius: 5px;
+  border: 1px solid #999;
+ border-color: rgb(106, 106, 107);
+ outline: none;
+}
+.youtube-info{
+  display: flex;
+}
+
+.profilepic{
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  object-fit: cover;
+  object-position:top;
+  vertical-align: middle;
+    margin-left: 5px;
+
+}
+
+.youtube-views,
+.youtube-author{
+display: block; 
+width: 220px;
+color: #8e8e8e;
+margin-left: 10px;
+font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+
+} 
+
+.youtube-author{margin-bottom: -7px;}
+.youtube-title{
+  width: 240px;
+  margin-left: 10px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 700; 
+  font-size: small;
+  color: ghostwhite;
+}
+
+.pic{
+  margin-top: 15px;
+}
+
+.service-box{
+  flex-direction: column;
+  background-color: bisque;
+  width: 270px;
+  display: flex;
+  border: 1px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.service-label{
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.y-n-row{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+
+}
+
+.music-box{
+  flex-direction: column;
+  width: 320px;
+  background-color: chartreuse;
+  height: 100px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid #2e5068;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.music-box2{
+width: 270px;
+border: 1px solid #f6f3f3;
+background-color: black;
+height: 80px;
+align-items: center;
+ margin-top: 10px;
+}
+.install-text{
+  font-size: small;
+  color: #f6f6f6;
+  font-weight: bolder;
+  margin-bottom: -4px;
+  margin-left: 10px;
+}
+.info-music{
+   font-size: small;
+  color: #969595;
+  font-size: 11px;
+  margin-left: 10px;
+}
+.profilebox{
+  width:340px;
+  height: 190px;
+  border-color: #030202;
+  background-color: #f6eff7;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.profile-box{
+  flex-direction: column;
+  align-items: start;
+  border: 1px solid #2e5068;
+  width: 100px;
+  margin-left: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dp1{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position:top;
+  vertical-align: middle;
+}
+.dp2{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position:top;
+  vertical-align: middle;
+}
+.dp3{
+  width: 100px;
+  height: 100px;
+  object-fit:cover;
+  object-position:center;
+  vertical-align: middle;
+}
+.profile-name{
+margin-top: 5px;
+margin-bottom: 2px;
+font-weight:bolder;
+margin-left: 5px;
+
+}
+.mutual-count{
+  margin-top: 0px;
+  font-size: 9px;
+  color: #484747;
+  margin-bottom: 7px;
+  margin-left: 5px;
+}
+.addfriend-btn{
+  background-color: #2b63bc;
+  border:none;
+  border-radius: 2px;
+  color: #ffffff;
+  height: 20px;
+  font-size: 8px;
+  font-weight: bold;
+  margin-bottom: 3px;
+    margin-left: 5px;
+
+}
