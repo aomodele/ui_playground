@@ -1,0 +1,118 @@
+ .Request-button {
+    background-color: rgb(4, 109, 16);
+    color: white;
+    border: 2;
+    border-color: rgb(12, 4, 147);
+    height: 20px;
+    width: 110px;
+    border-radius: 50px;
+    cursor: pointer;
+     margin-right: 20px;
+  }
+  .Hello-button {
+    background-color: rgba(5, 7, 125, 0.993);
+    color: white;
+    border: 2;
+    border-color: rgb(12, 4, 147);
+    height: 20px;
+    width: 110px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  a {
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  a:hover {
+    color: brown;
+    transition: color 0.3s ease;
+  }
+  .Click-button {
+    background-color: rgba(214, 214, 229, 0.993);
+    color: rgb(12, 5, 114);
+    border: 2;
+    border-color: rgb(19, 12, 140);
+    height: 20px;
+    width: 110px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .BuyNow-button {
+    background-color: rgba(172, 178, 6, 0.993);
+    color: rgb(243, 243, 248);
+    border: 2;
+    border-color: rgb(1, 1, 2);
+    height: 20px;
+    width: 110px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+   .back-link {
+    background-color: rgba(246, 246, 245, 0.993);
+    color: rgb(7, 116, 16);
+    height: 20px;
+    width: 110px;
+    cursor: pointer;
+  }
+
+  .product-title {
+    color: rgb(4, 10, 5);
+    height: 50;
+    width: 600px;
+    font-size:xx-large;
+  }
+
+  .price {
+    color: rgb(0, 118, 0);
+    height: 50;
+    width: 600px;
+    margin-top:  -10px;
+    font-weight: bold;
+  }
+
+  .delivery {
+    color: rgb(1, 2, 1);
+    height: 50;
+    width: 600px;
+    margin-top:  0px;
+  }
+
+  .add-to-cart {
+    background-color:rgb(255, 216, 20); 
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 50px;
+    margin-top:  0px;
+    margin-right: 20;
+    cursor: pointer;
+  }  .add-to-cart:hover{box-shadow:10px 10px 10px rgba(0,0,0,0.5)};
+  .add-to-cart:hover{background-color: rgb(40, 135, 11);}
+  .add-to-cart:hover{opacity: 0.9;}
+.add-to-cart:hover{color: rgb(7, 75, 17);
+    transition: background-color0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+  .buy-now {
+    background-color:rgb(255, 164, 28); 
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 50px;
+    margin-top:  -20px;
+    cursor: pointer;
+    
+  }
+  .buy-now:hover{box-shadow:10px 10px 10px rgba(0,0,0,0.5)};
+  .buy-now:hover{background-color:rgb(40, 135, 11)}
+   .buy-now:hover{opacity: 0.7;}
+   .buy-now:hover{color: rgb(255, 255, 255);
+   transition: background-color 1s,
+    color 0.3s, box-shadow 0.8s;}

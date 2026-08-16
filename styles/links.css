@@ -1,0 +1,74 @@
+.link-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+
+  .youtube-link {
+    color: red;
+  }
+  .youtube-link:hover {
+    color: darkred;
+  }
+
+  .twitter-link {
+    color: dodgerblue;
+  }
+  .twitter-link:hover {
+    color: navy;
+  }
+
+  .instagram-link {
+    color: deeppink;
+  }
+  .instagram-link:hover {
+    color: purple;
+  }
+
+  .linkedin-link {
+    color: blue;
+  }
+  .linkedin-link:hover {
+    color: brown;
+  }
+   .promo{font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+  .newtext{color: rgb(217, 141, 41);
+  font-weight: bolder ;
+padding-bottom: 0px;
+margin-bottom: 5px;
+font-size: 12px;}
+  .mactext{color: black;
+  font-weight: bolder;
+  font-size: large;
+  padding-top: 0px;
+  margin-top: 0px;
+margin-bottom: 5px;}
+  .supertext{color: black;
+  font-weight: bolder;
+  font-size: xx-large;
+  padding-top: 0px;
+  margin-top: 0px;
+margin-bottom: 5px;}
+  .pricetext{color: rgb(8, 8, 2);
+  padding-top: 5px;
+  margin-top: 0px ;
+  font-size: small;}
+  .button{color: rgb(255, 255, 255);
+  background-color: #0064c8;
+  
+    justify-content: center;
+    align-items: center;
+  border-radius: 50px;
+  border-style: none;
+  height: 25px;
+  width: 42px;
+  font-size: 10px;
+  font-weight: bold;}
