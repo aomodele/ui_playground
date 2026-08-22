@@ -1,125 +1,560 @@
-<!DOCTYPE <html>
-  <html>
-    <head>
-      <title>YouTube.com Clone</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <style>
-    p{
-      font-family: Roboto,Arial;
+  <!DOCTYPE <html>
+    <html>
+      <head>
+        <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+      p{
+        font-family: Roboto,Arial;
+      }
+      .thumbnail{width: 100%;
+      }
+  /*.grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .thumbnail{width: 300px;
-      display: block;
-    /*
-    height: 300px;
-    object-fit: contain;
-    object-position: top;
-    border-width: 2px;
-    border-style: solid;
-    border-color: brown;
-    */
-}
-.body{
-  display: flex ;
-  /*gap: 10px;*/
-}
-.youtube-container{
-  background-color: rgb(235, 233, 233);
-  width: 300px;
-  display: inline-block;
-  margin-right: 15px;
-}
-.search-bar{
-  font-size: 10px;
-  height: 30px;
-  margin-left: 12px;
-  padding-left: 6px;
-  border-radius: 5px;
-  border: 1px solid #999;
- border-color: rgb(106, 106, 107);
- outline: none;
- display: inline-block;
- justify-content: center;
- align-items: center;
- 
-}
-.youtube-info{
-  display: flex;
-}
-
-.profilepic{
-  width: 40px;
-  border-radius: 50%;
-  height: 40px;
-  object-fit: cover;
-  object-position:top;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-.youtube-views,
-.youtube-author{
-display: block; 
-width: 220px;
-color: rgb(96,96,96);
-margin-left: 10px;
-  font-weight: 400;
-  font-size: 12px;
-
-} 
-
-.youtube-author{margin-bottom: -7px;}
-.youtube-title{
-  width: 240px;
-  margin-left: 10px;
-  font-weight: 500; 
-  font-size: small;
-  color: rgb(0, 0, 0);
-  line-height: 20px
-}
-
-.pic{
-  margin-top: 15px;
-}
-   </style> </head>
-    <body>
-      <input class="search-bar"
-     type="text" placeholder="Search">
-  <div class="body">
-     
-        
-     <div class="youtube-container">
-      <img class="thumbnail" src="thumbnails/image1.webp">
-    <div class="youtube-info">
-      <div class="pic">
-      <img class="profilepic" src="thumbnails/headshot.png">
-      </div>
-       <div class="details">
-        <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
-         <p class="youtube-author"> Adeola Omodele</p>
-         <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
-       </div>
-      </div>
-     
+  .body{
+    display: flex ;
+    gap: 10px;
+  }*/
+  
+ .hamburger-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .search-input{
+                flex:1;
+                border: none;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 16px;
+                background: transparent;
+              }
+  .search-bar{
+              display: flex;
+              border: #c8c6c6 solid 0.5px;
+              flex: 1;
+              font-size: 14px;
+              flex-direction: row;
+              height: 40px;
+              padding-left: 12px;
+              border-radius: 20px;
+              justify-content: center;
+              align-items: center;
+              border-top-right-radius: 0px;
+              border-bottom-right-radius: 0px;
+              font-family: Roboto, Ariel;
+              box-shadow: inset 0px 0px 0.5px rgba(0, 0, 0, 0.33);
+              background-color: #f9f6f6;
+              width: 0;
+            }
+  .search-bar::placeholder{
+    padding-left: 10px;
+  }
    
-         <div class="youtube-container">
-      <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-    <div class="youtube-info">
-      <div class="pic">
-      <img class="profilepic" src="thumbnails/headshot.png">
+  .search-icon {
+                border-left: 1px solid #ddd;
+                background-color:#f8f7f7;
+                margin: 0px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                color: #000000;
+                }
+  .microphone, .hamburger-icon,
+  .search-icon{background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .youtube-info{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+
+  }
+
+  .profilepic{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    object-fit: cover;
+    object-position:top;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  .youtube-views,
+  .youtube-author{
+  display: block; 
+  width: 220px;
+  color: rgb(96,96,96);
+  margin-left: 10px;
+    font-weight: 400;
+    font-size: 12px;
+
+  } 
+
+  .youtube-author{margin-bottom: -7px;}
+  .youtube-title{
+    width: 100%; /* this grid-template-columns: 40px 1fr; is enabling it to fill up the remaining space*/
+    margin-left: 10px;
+    font-weight: 500; 
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    line-height: 20px
+  }
+
+  .pic{
+    margin-top: 15px;
+  }
+  /*.dgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    column-gap: 10px;
+  } alongside the next branch @media*/
+ 
+  @media (max-width: 1200px) {
+      .dgrid {
+        grid-template-columns: 300px 300px 300px ; /* 3 columns now */}
+     
+      .dgrid .last-item {
+        grid-column: 1 / -1; /* forces it to take the full next row */
+        
+      }}
+ 
+  /*.d1-grid{
+margin-top: 3px;
+      display: grid;
+      column-gap: 10px;
+      background-color: antiquewhite;
+      padding-bottom: 30px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  } currently not in use */
+  
+  
+    .header-new{
+      height: 55px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .left-section{
+      display: flex;
+      align-items: center;
+    }
+    .middle-section{
+      display: flex;
+      flex:1;
+      align-items:center;
+      margin-left: 70px;
+      margin-right: 35px;
+      max-width: 500px;
+    }
+    .right-section{
+      width: 200px;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .menu-icon{
+      width: 30px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .youtube-icon{
+      width: 90px;
+    }
+    .search-icon-{
+      width: 50px;
+      height: 40px;
+      background-color: #f9f6f6;
+       border: solid 1px;
+       border-color: #b9b8b8;
+    }
+    .voice-search-icon{
+      width: 42px;
+      height: 42px;
+      background-color: #ecebeb;
+      border: none;
+      border-radius: 25px;
+      margin-left: 10px;
+    }
+    .uploadvidicon{
+      width: 40px;
+       border: none;
+      background:none; 
+    }
+    .waffleicon{
+      width: 40px;
+      background:none; 
+      border: none;
+      border-radius: 25px;
+    }
+    .bell-icon{
+      width: 40px;
+       border: none;
+      background:none; 
+      border: none;
+    }
+    .channel-img{
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+    </style> </head>
+  
+<body>
+  
+    <div class="header-new">
+      <div class="left-section">
+       <img class="menu-icon" src="Icons/hamburger-menu-icon.svg" alt="hamburger-icon">
+       <img class="youtube-icon" src="Icons/youtube-logo.svg" alt="youtubelogo">
       </div>
-       <div class="details">
-        <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
-         <p class="youtube-author"> Adeola Omodele</p>
-         <p class="youtube-views">19M views &#183; 4 months</p></div>
-       </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-icon-"><img  src="Icons/search-icon.svg" alt="search-icon"></button> 
+        <button class="voice-search-icon"> <img  src="Icons/voice-search-icon.svg" alt="voice-searc-icon"></button> 
+      </div>
+      <div class="right-section">
+        <button class="uploadvidicon"><img  src="Icons/uploadvideo-icon.svg" alt="uploadvideoicon"></button> 
+        <button class="waffleicon"> <img  src="Icons/waffle-icon.svg" alt="waffle"></button> 
+        <button class="bell-icon"> <img  src="Icons/bell-icon.svg" alt="bellicon"></button> 
+        <img class="channel-img" src="thumbnails/birthdayshoot.png" alt="birthdayshoot">
+
+
+      </div>
+    </div>
+
+ 
+       
+  
+      <!--<div class="body"><div>--> 
+  <div style="
+      display:grid; 
+      margin-top: 5px;
+      background-color: bisque;
+      column-gap: 16px;
+      row-gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;">
+
+     
+          <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+      
+      
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views">19M views &#183; 4 months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
       </div>
     
-   </div>
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views">19M views &#183; 4 months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+
+       <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>   
   </div>
-  </body>
-  </html>
+   
+
+ <div style="
+      display:grid; 
+      margin-top: 5px;
+      
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;">
+      <!--<div class="body"><div>--> 
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views">19M views &#183; 4 months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views">19M views &#183; 4 months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+
+       <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views">19M views &#183; 4 months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+
+      
+  
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views">19M views &#183; 4 months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+      
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Try Not To Laugh Challenge <br>#9 </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views">19M views &#183; 4 months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="youtube-container">
+        <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+        <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai! </p> 
+          <p class="youtube-author"> Adeola Omodele</p>
+          <p class="youtube-views"> 3.4M views &#183; 6 months</p></div>
+        </div>
+      </div>
+     
+
+  </div>
+</body>
+    </html>

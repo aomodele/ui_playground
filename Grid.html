@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Grid practice</title>
+  </head>
+  <body>
+    
+    
+   <div style="
+      display:grid; 
+      grid-template-columns: 100px 100px;">
+         
+      <div style="background-color:
+       aqua;"> div 1 100px</div>
+      <div style="background-color:
+       rgb(136, 204, 40);"> div 2 100px </div>
+  </div>
+  <div style="
+      display:grid; 
+      margin-top: 5px;
+      grid-template-columns: 200px 75px;">
+         
+      <div style="background-color:
+       aqua;"> 200px</div>
+      <div style="background-color:
+       rgb(240, 156, 173);"> 75px </div>
+  </div>
+
+   <div style="
+      display:grid; 
+      margin-top: 5px;
+      grid-template-columns: 100px 1fr;">
+         
+      <div style="background-color:
+       aqua;"> 100px</div>
+      <div style="background-color:
+       rgb(0, 255, 162);"> 1fr </div>
+  </div>
+
+  <div style="
+      display:grid; 
+      margin-top: 5px;
+      grid-template-columns: 1fr 1fr 2fr;">
+         
+      <div style="background-color:
+       aqua; height: 200px"> 1fr</div>
+      <div style="background-color:
+       rgb(0, 255, 162); height: 200px"> 1fr </div>
+       <div style="background-color:
+       aqua; height: 200px;"> 2fr</div>
+  </div>
+
+  <div style="
+      display:grid; 
+      margin-top: 5px;
+      grid-template-columns: 50px 1fr 75px;">
+         
+      <div style="background-color:
+       aqua; height: 200px">Col 1 50px</div>
+      <div style="background-color:
+       rgb(0, 255, 162); height: 200px">Col 2 1fr </div>
+       <div style="background-color:
+       aqua; height: 200px;"> Col 3 75px</div>
+  </div>
+
+  <div style="
+      display:grid; 
+      margin-top: 20px;
+      margin-bottom: 20px;
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;">
+         
+      <div style="background-color:
+       rgb(31, 2, 199); height: 200px"> 1fr</div>
+      <div style="background-color:
+       rgb(0, 255, 162); height: 200px"> 1fr </div>
+       <div style="background-color:
+       rgb(19, 5, 221); height: 200px;"> 1fr</div>
+        <div style="background-color:
+       aqua; height: 200px;"> 1fr</div>
+       <div style="background-color:
+       rgb(4, 197, 204); height: 200px"> 1fr</div>
+      <div style="background-color:
+       rgb(255, 0, 200); height: 200px"> 1fr </div>
+       <div style="background-color:
+       rgb(234, 255, 0); height: 200px;"> 1fr</div>
+        <div style="background-color:
+       rgb(255, 0, 30); height: 200px;"> 1fr</div>
+  </div>
+
+  <style>
+  .mygrid {
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: 100px 800px 200px 100px;
+  }
+
+  @media (max-width: 1200px) {
+    .mygrid {
+      grid-template-columns: 100px 800px 200px; /* 3 columns now */
+    }
+    .mygrid .last-item {
+      grid-column: 1 / -1; /* forces it to take the full next row */
+    }
+  }
+</style>
+
+  <div style="
+      display:grid; 
+      margin-top: 5px;
+      grid-template-columns: 100px 1fr 200px 100px;">
+      <div style="background-color:
+       aqua; height: 200px"> 100px</div>
+      <div style="background-color:
+       rgb(0, 255, 162); height: 200px"> 100px <p>text</p> </div>
+       <div style="background-color:
+       aqua; height: 200px;"> 200px</div>
+       <div style="background-color:
+       rgb(0, 255, 162); height: 200px"> 100px </div>
+  </div>
+
+  <style>
+  .my-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  .my-flex > div {
+    height: 200px;
+  }
+</style>
+
+<div class="my-flex">
+  <div style="background-color: aqua; width: 100px;"> 100px</div>
+  <div style="background-color: rgb(0, 255, 162); width: 800px;"> 800px <p>text</p></div>
+  <div style="background-color: aqua; width: 200px;"> 200px</div>
+  <div style="background-color: rgb(0, 255, 162); width: 100px;"> 100px </div>
+</div>
+
+ <div style="
+      display:grid; 
+      margin-top: 5px;
+      padding-bottom: 1000px;
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;">
+         
+      <div style="background-color:
+       aqua; height: 200px;"> 1fr</div>
+      <div style="background-color:
+       rgb(0, 255, 162); height: 200px;"> 1fr </div>
+       <div style="background-color:
+       aqua; height: 200px;"> 1fr</div>
+       <div style="background-color:
+       rgb(0, 255, 162); height: 200px;"> 1fr </div>
+       <div style="background-color:
+       aqua; height: 200px;"> 1fr</div>
+       <div style="background-color:
+       rgb(0, 255, 162); height: 200px;"> 1fr </div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head><style>
+  .youtube-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    gap: 16px;
+    margin-top: 5px;
+  }
+
+  /* Tablet: 2 columns */
+  @media (max-width: 900px) {
+    .youtube-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Mobile: 1 column */
+  @media (max-width: 600px) {
+    .youtube-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<div class="youtube-grid">
+
+  <div style="background-color: aqua; height: 200px">
+    <div class="youtube-container">
+      <img class="thumbnail" src="thumbnails/image1.webp">
+      <div class="youtube-info">
+        <div class="pic">
+          <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+          <p class="youtube-author">Adeola Omodele</p>
+          <p class="youtube-views">3.4M views &#183; 6 months</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: aqua; height: 200px">
+    <div class="youtube-container">
+      <img class="thumbnail" src="thumbnails/image2.webp">
+      <div class="youtube-info">
+        <div class="pic">
+          <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Video Title 2</p>
+          <p class="youtube-author">Adeola Omodele</p>
+          <p class="youtube-views">1.2M views &#183; 3 months</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: aqua; height: 200px">
+    <div class="youtube-container">
+      <img class="thumbnail" src="thumbnails/image3.webp">
+      <div class="youtube-info">
+        <div class="pic">
+          <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Video Title 3</p>
+          <p class="youtube-author">Adeola Omodele</p>
+          <p class="youtube-views">800K views &#183; 1 month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: aqua; height: 200px">
+    <div class="youtube-container">
+      <img class="thumbnail" src="thumbnails/image4.webp">
+      <div class="youtube-info">
+        <div class="pic">
+          <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Video Title 4</p>
+          <p class="youtube-author">Adeola Omodele</p>
+          <p class="youtube-views">2.1M views &#183; 4 months</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: aqua; height: 200px">
+    <div class="youtube-container">
+      <img class="thumbnail" src="thumbnails/image5.webp">
+      <div class="youtube-info">
+        <div class="pic">
+          <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Video Title 5</p>
+          <p class="youtube-author">Adeola Omodele</p>
+          <p class="youtube-views">500K views &#183; 2 weeks</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: aqua; height: 200px">
+    <div class="youtube-container">
+      <img class="thumbnail" src="thumbnails/image6.webp">
+      <div class="youtube-info">
+        <div class="pic">
+          <img class="profilepic" src="thumbnails/headshot.png">
+        </div>
+        <div class="details">
+          <p class="youtube-title">Video Title 6</p>
+          <p class="youtube-author">Adeola Omodele</p>
+          <p class="youtube-views">1.5M views &#183; 5 months</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
