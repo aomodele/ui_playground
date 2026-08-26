@@ -861,3 +861,140 @@ margin-left: 5px;
 .homebtn:hover{
     background-color: #881ece;
 }
+.all-inboxes-box{
+ font-family: Roboto;
+ display: block;
+ margin-left: 10px;
+ border-color: burlywood;
+ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
+ border: none;
+border-radius: 10px;
+}
+.mail-title{
+color: #757474;
+font-size: 12px;
+margin-left: 10px;
+padding-top: 10px;
+}
+.overall-info{
+display:flex;
+flex-direction: row;
+margin-left: 10px;
+padding-right: 10px;
+}
+.mail-info{
+  display: inline;
+}
+.mail-pic{
+  margin-top: 10px;
+width: 40px;
+height: 40px;
+border-radius: 25px;
+}
+.name-time{
+display: flex;
+align-items: center;
+}
+.sub-body{
+  display: inline;
+}
+.mail-name{
+margin-top:-15px;
+margin-bottom: -15px;
+margin-left: 10px;
+font-size: 13px;
+font-weight: 600;
+width: 250px;
+
+}
+.time{
+font-size: 11px;
+font-weight: 500;
+color: #757474;
+}
+.mail-subj{
+font-size: 12px;
+font-weight: 600;
+margin-left: 10px;
+margin-top: -8px;
+margin-bottom: 6px;
+
+}
+.mail-body{
+font-size: 12px;
+color: #878686;
+margin-left: 10px;
+margin-top: -5px;
+font-weight: 500;
+}
+.twitter-nested{
+   margin-left: 10px;
+ border-color: burlywood;
+ box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
+ border: none;
+border-radius: 10px;
+font-family: Roboto, Ariel;
+height: 210px;
+}
+.overall-twitter-info{
+display: inline;
+}
+.nested-box{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+.twitter-pic{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.twit-user{
+  display: flex;
+}
+.twitter-user{
+  margin-left: 10px;
+ font-weight: 600;
+}
+.twitter-userid{
+  color: #757474;
+  padding-left: 5px;
+}
+.twit-body{
+  display: inline;
+}
+.twit-subj{
+  margin-left: 10px;
+  margin-top: -12px;
+  text-wrap: inherit;
+  width: 400px;
+}
+.youtube-link-box{
+  margin-left: 80px;
+  border-color: burlywood;
+ border: solid 1px;
+border-radius: 10px;
+border-color:#aba9a9 ;
+width: 370px;
+display: flex;
+align-items: center;
+}
+.youtube-link-info{
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.y-link-icon{
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+.y-link-info{
+  margin-left: 10px;
+}
+
+
+
+
+
