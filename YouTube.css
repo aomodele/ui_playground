@@ -1,10 +1,32 @@
  p{
         font-family: Roboto,Arial;
       }
+
+body{
+  color: #000000;
+  margin: 0;
+  padding-top: 20px;
+  /* other properties can also be added*/
+}
 .youtube-grid{
+  font-family: Roboto;
+    display:grid; 
+      margin-top: 5px;
+      column-gap: 16px;
+      row-gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
     padding-top: 80px;
     padding-left: 109px;
     background-color: #f5f2f261;
+  }
+  @media(max-width: 750px){
+    .youtube-grid{grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media(min-width:1000px) {
+    .youtube-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 .youtube-container {
   width: 100%;
@@ -29,8 +51,8 @@
   color: #fff;
   font-size: 12px;
   line-height: 0.05;        /* removes extra vertical space from line-height */
-padding: 0.1px 3px 0.1px 3px;
-/*       top  right bottom left */  border-radius: 4px;
+  padding: 0.1px 3px 0.1px 3px;/*       top  right bottom left */  
+  border-radius: 2px;
 }
          
 
@@ -69,7 +91,9 @@ padding: 0.1px 3px 0.1px 3px;
     font-weight: 500; 
     font-size: medium;
     color: rgb(0, 0, 0);
-    line-height: 20px
+    line-height: 20px;
+    white-space: normal;      /* ensures wrapping is allowed */
+  overflow-wrap: break-word; /* breaks long words if needed so they don't overflow */
   }
 
   .pic{
@@ -81,15 +105,7 @@ padding: 0.1px 3px 0.1px 3px;
     column-gap: 10px;
   } alongside the next branch @media*/
  
-  @media (max-width: 1200px) {
-      .dgrid {
-        grid-template-columns: 300px 300px 300px ; /* 3 columns now */}
-     
-      .dgrid .last-item {
-        grid-column: 1 / -1; /* forces it to take the full next row */
-        
-      }}
- 
+  
   /*.d1-grid{
 margin-top: 3px;
       display: grid;
@@ -336,7 +352,6 @@ margin-top: 3px;
   margin-top: 6px;
   background: #333;
   color: #fff;
-  
   border-radius: 4px;
   z-index: 10;
 }
@@ -368,6 +383,23 @@ opacity: 1;
       border-radius: 20px;
       
     }
+    .side-bar{
+      display:flex;
+     flex-direction: column;
+     background-color: rgb(255, 255, 255);
+     position: fixed;
+     top: 55px;
+     left: 0;
+     width: 90px;
+     bottom: 0;
+     gap: 52.5px;
+     padding-top: 40px;
+     z-index: 100;
+    }
+   /* @media(max-width: 300px){
+    .side-bar{grid-template-columns: 200px;
+    }
+  } fix for side bar*/
     .Home-box,
     .explore-box,
     .subscription-box,
@@ -405,6 +437,14 @@ opacity: 1;
      align-items: center;
      justify-content: center;
      margin-bottom: -5px;
+    }
+    .Home-box:hover,
+    .explore-box:hover,
+    .subscription-box:hover,
+    .original-box:hover,
+    .youtube-music-box:hover,
+    .library-box:hover{
+      background-color: rgb(227, 225, 225);
     }
     .explore-icon{
       margin-left: 4px;

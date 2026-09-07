@@ -10,7 +10,7 @@
     <div class="card">
       <h3>3a. Uber</h3>
       <div class="box">
-        <button class="uber-button">Request now</button>
+        <button class="uber-button" onclick=" alert('Ride requested')">Request now</button>
       </div>
       <div class="caption">(opacity)</div>
     </div>
@@ -18,15 +18,17 @@
     <div class="card">
       <h3>3b. Amazon</h3>
       <div class="box">
-        <button class="amazon-button">Add to Cart</button>
+        <button class="amazon-button" onclick=" alert('Item added')"  >Add to Cart</button>
+     
       </div>
+      
       <div class="caption">(background color)</div>
     </div>
 
     <div class="card">
       <h3>3c. GitHub</h3>
       <div class="box">
-        <button class="github-button">Sign up</button>
+        <button class="github-button" onclick=" alert('Signin to share projects')">Sign up</button>
       </div>
       <div class="caption">(shadow)</div>
     </div>
@@ -56,8 +58,9 @@
   <p class="delivery">Free delivery tomorrow.</p>
 
   <div class="buttons">
-    <button class="add-to-cart">Add to Cart</button>
-    <button class="buy-now">Buy now</button>
+    <button class="add-to-cart" onclick="console.log('Loading...'); alert('Added')">Add to Cart</button>
+    <button class="buy-now" onclick="console.log('Loading...');
+        alert('Purchased')">Buy now</button>
   </div>
 </div>
 </body>
