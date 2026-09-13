@@ -9,6 +9,13 @@
     flex-direction: row;
     column-gap: 20px;
   }
+  .shape button{
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
   .ashape,
   .bshape,
   .cshape,
@@ -21,7 +28,6 @@
     align-content: center;
     border-radius: 10px;
     text-align: center;
-    color: white;
   }
   .ashape:hover{
     transform: translateX(5px);
@@ -29,7 +35,7 @@
   }
   .bshape:hover{
     transform: rotate(360deg);
-    transition: 1s;
+    transition: 1.5s;
   }
   .cshape:hover{
     transform: rotateX(360deg);
