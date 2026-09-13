@@ -4,7 +4,81 @@
     flex-wrap: wrap;
     gap: 40px;
   }
+  .shape{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .ashape,
+  .bshape,
+  .cshape,
+  .dshape,
+  .eshape,
+  .fshape{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(33, 13, 189);
+    align-content: center;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  .ashape:hover{
+    transform: translateX(5px);
+    transition: 0.3s;
+  }
+  .bshape:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+  .cshape:hover{
+    transform: rotateX(360deg);
+    transition: 1s;
+  }
+  .dshape:hover{
+    transform: rotateY(360deg);
+    transition: 2s;
+  }
+   .eshape:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+   .fshape:hover{
+    transform: scaleX(1.2);
+    transition: 0.3s;
+  }
+.toggle{
+  position: relative;
+  width: 90px;
+  height: 46px;
+}
+.toggle input{
+  display: none;
 
+}
+.track{
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background: #e0e5ec;
+ box-shadow: inset 6px 6px 10px #b8bec7, inset -6px -6px 10px #ffffff;
+}
+.thumb{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #e0e5ec;
+  box-shadow: 4px 4px 8px #b8bec7,-4px -4px 8px #ffffff;
+  transition: left 0.3s ease;
+}
+input:checked~.thumb{
+  left: 49px;
+  background: linear-gradient(135deg,#00eaff, #6a00ff);
+}
 .shoot{
   width: 200px;
   height: 200px;
@@ -28,6 +102,11 @@
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+}
+.thanksgiving:hover, .outing:hover,.shoot:hover{
+  transform: scale(1.5);
+  transition: 1.5s;
+  margin: 40px;
 }
 .roundsearch{
   font-size: 10px;
